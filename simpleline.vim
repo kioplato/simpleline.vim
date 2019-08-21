@@ -129,3 +129,20 @@ set statusline+=\
 set statusline+=%#MyStatuslineFiletype#
 set statusline+=%#MyStatuslineFiletypeBody#%{SetFiletype(&filetype)}
 set statusline+=%#MyStatuslineFiletype#
+
+" Setup the colors
+exe 'hi StatusLine          guifg='.s:purple.'     guibg=NONE     gui=NONE'
+exe 'hi StatusLineNC        guifg='.s:grey_cursor.'     guibg=NONE     gui=bold'
+
+exe 'hi MyStatuslineSeparator guifg='.s:grey_cursor.' gui=NONE guibg=NONE'
+
+exe 'hi MyStatuslineModified guifg='.s:grey_cursor.' gui=NONE guibg=NONE'
+
+exe 'hi MyStatuslineFiletype guibg=NONE gui=NONE guifg='.s:grey_cursor
+exe 'hi MyStatuslineFiletypeBody guifg='.s:purple.' gui=italic guibg='.s:grey_cursor
+
+exe 'hi MyStatuslinePercentage guifg='.s:grey_cursor.' gui=NONE guibg=NONE'
+exe 'hi MyStatuslinePercentageBody guibg='.s:grey_cursor.' gui=none guifg='.s:cyan
+
+exe 'hi MyStatuslineLineCol guifg='.s:grey_cursor.' gui=NONE guibg=NONE'
+exe 'hi MyStatuslineLineColBody guibg='.s:grey_cursor.' gui=none guifg='.s:yellow_dark
