@@ -80,3 +80,11 @@ function! SetModifiedSymbol(modified)
     endif
     return '●'
 endfunction
+
+function! SetFiletype(filetype)
+  if a:filetype == ''
+      return '-'
+  else
+      return a:filetype
+  endif
+endfunction
