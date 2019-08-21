@@ -107,3 +107,25 @@ set statusline+=%#MyStatuslineSeparator#\
 set statusline+=%#MyStatuslineModified#
 set statusline+=%#MyStatuslineModifiedBody#%{SetModifiedSymbol(&modified)}
 set statusline+=%#MyStatuslineModified#
+" Right side items
+" =======================
+set statusline+=%=
+" Line and Column
+set statusline+=%#MyStatuslineLineCol#
+set statusline+=%#MyStatuslineLineColBody#%2l
+set statusline+=\/%#MyStatuslineLineColBody#%2c
+set statusline+=%#MyStatuslineLineCol#
+" Padding
+set statusline+=\ 
+
+" Current scroll percentage and total lines of the file
+set statusline+=%#MyStatuslinePercentage#
+set statusline+=%#MyStatuslinePercentageBody#%P
+set statusline+=\/\%#MyStatuslinePercentageBody#%L
+set statusline+=%#MyStatuslinePercentage#
+" Padding
+set statusline+=\ 
+" Filetype
+set statusline+=%#MyStatuslineFiletype#
+set statusline+=%#MyStatuslineFiletypeBody#%{SetFiletype(&filetype)}
+set statusline+=%#MyStatuslineFiletype#
