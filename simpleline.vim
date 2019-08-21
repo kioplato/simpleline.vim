@@ -1,4 +1,4 @@
-" Notification:
+" Notifications:
 " ====================================================================
 " 1.
 " This status line cannot be installed with a plugin manager.
@@ -9,8 +9,8 @@
 " Disable any statusline plugins, as they will override this.
 " ====================================================================
 " 3.
-" This statusline goes along onedark.vim colorscheme. It is required
-" to have it installed.
+" This statusline goes along onedark.vim colorscheme.
+" It is required to have it installed.
 " ====================================================================
 
 " Have available all onedark.vim colors.
