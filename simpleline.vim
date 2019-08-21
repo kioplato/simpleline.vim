@@ -71,3 +71,12 @@ function! RedrawModeColors(mode)
   " Return empty string so as not to display anything in the statusline
   return ''
 endfunction
+
+function! SetModifiedSymbol(modified)
+    if a:modified == 1
+        exe 'hi MyStatuslineModifiedBody guibg='.s:grey_cursor.' gui=bold guifg='.s:red_dark
+    else
+        exe 'hi MyStatuslineModifiedBody guibg='.s:grey_cursor.' gui=bold guifg='.s:grey_visual
+    endif
+    return '●'
+endfunction
