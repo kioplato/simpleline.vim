@@ -88,3 +88,22 @@ function! SetFiletype(filetype)
       return a:filetype
   endif
 endfunction
+
+" Statusbar items
+" ====================================================================
+
+" This will not be displayed, but the function RedrawModeColors will be
+" called every time the mode changes, thus updating the colors used for the
+" components.
+set statusline=%{RedrawModeColors(mode())}
+" Left side items
+" =======================
+set statusline+=%#MyStatuslineAccent#
+set statusline+=%#MyStatuslineAccentBody#\ 
+" Filename
+set statusline+=%#MyStatuslineFilename#\ %.20f
+set statusline+=%#MyStatuslineSeparator#\ 
+" Modified status
+set statusline+=%#MyStatuslineModified#
+set statusline+=%#MyStatuslineModifiedBody#%{SetModifiedSymbol(&modified)}
+set statusline+=%#MyStatuslineModified#
