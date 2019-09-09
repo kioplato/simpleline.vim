@@ -145,7 +145,7 @@ set statusline+=%#MyStatuslinePercentage#
 set statusline+=\ 
 " Filetype
 set statusline+=%#MyStatuslineFiletype#
-set statusline+=%#MyStatuslineFiletypeBody#%{SetFiletype(&filetype)}
+set statusline+=%#MyStatuslineFiletypeBody#\ %{SetFiletype(&filetype)}\ 
 set statusline+=%#MyStatuslineFiletype#
 
 " Setup the colors
