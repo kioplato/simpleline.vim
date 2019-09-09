@@ -119,7 +119,7 @@ set statusline=%{RedrawModeColors(mode())}
 set statusline+=%#MyStatuslineAccent#
 set statusline+=%#MyStatuslineAccentBody#\ %{SetModeSymbol(mode())}\ 
 " Filename
-set statusline+=%#MyStatuslineFilename#\ %.20f
+set statusline+=%#MyStatuslineFilename#\ %t\ 
 set statusline+=%#MyStatuslineSeparator#\ 
 " Modified status
 set statusline+=%#MyStatuslineModified#
