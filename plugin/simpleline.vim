@@ -89,6 +89,24 @@ function! SetFiletype(filetype)
   endif
 endfunction
 
+function! SetModeSymbol(mode)
+	if a:mode == 'n'
+		return 'N'
+	elseif a:mode == 'i'
+		return 'I'
+	elseif a:mode == 'R'
+		return 'R'
+	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^V'
+		return 'V'
+	elseif a:mode == 'c'
+		return 'C'
+	elseif a:mode == 't'
+		return 'T'
+	endif
+	" Return 'E' for Error.
+	return 'E'
+endfunction
+
 " Statusbar items
 " ====================================================================
 
