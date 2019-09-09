@@ -41,32 +41,32 @@ function! RedrawModeColors(mode)
   if a:mode == 'n'
     exe 'hi MyStatuslineAccent guifg='.s:grey_visual.' gui=NONE guibg=NONE'
     exe 'hi MyStatuslineFilename guifg='.s:green.' gui=NONE guibg='.s:grey_cursor
-    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=NONE guifg='.s:green
+    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=bold guifg='.s:green
   " Insert mode
   elseif a:mode == 'i'
     exe 'hi MyStatuslineAccent guifg='.s:grey_visual.' gui=NONE guibg=NONE'
     exe 'hi MyStatuslineFilename guifg='.s:blue.' gui=NONE guibg='.s:grey_cursor
-    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=NONE guifg='.s:blue
+    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=bold guifg='.s:blue
   " Replace mode
   elseif a:mode == 'R'
     exe 'hi MyStatuslineAccent guifg='.s:grey_visual.' gui=NONE guibg=NONE'
     exe 'hi MyStatuslineFilename guifg='.s:red.' gui=NONE guibg='.s:grey_cursor
-    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=NONE guifg='.s:red
+    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=bold guifg='.s:red
   " Visual mode
   elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^V'
     exe 'hi MyStatuslineAccent guifg='.s:grey_visual.' gui=NONE guibg=NONE'
     exe 'hi MyStatuslineFilename guifg='.s:purple.' gui=NONE guibg='.s:grey_cursor
-    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=NONE guifg='.s:purple
+    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=bold guifg='.s:purple
   " Command mode
   elseif a:mode == 'c'
     exe 'hi MyStatuslineAccent guifg='.s:grey_visual.' gui=NONE guibg=NONE'
     exe 'hi MyStatuslineFilename guifg='.s:cyan.' gui=NONE guibg='.s:grey_cursor
-    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=NONE guifg='.s:cyan
+    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=bold guifg='.s:cyan
   " Terminal mode
   elseif a:mode == 't'
     exe 'hi MyStatuslineAccent guifg='.s:grey_visual.' gui=NONE guibg=NONE'
     exe 'hi MyStatuslineFilename guifg='.s:red_dark.' gui=NONE guibg='.s:grey_cursor
-    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=NONE guifg='.s:red_dark
+    exe 'hi MyStatuslineAccentBody guibg='.s:grey_visual.' gui=bold guifg='.s:red_dark
   endif
   " Return empty string so as not to display anything in the statusline
   return ''
