@@ -114,21 +114,21 @@ endfunction
 " called every time the mode changes, thus updating the colors used for the
 " components.
 set statusline=%{RedrawModeColors(mode())}
-" Left side items
+" Left side items.
 " =======================
 set statusline+=%#MyStatuslineAccent#
 set statusline+=%#MyStatuslineAccentBody#\ %{SetModeSymbol(mode())}\ 
-" Filename
+" Filename.
 set statusline+=%#MyStatuslineFilename#\ %t\ 
 set statusline+=%#MyStatuslineSeparator#\ 
-" Modified status
+" Modified status.
 set statusline+=%#MyStatuslineModified#
 set statusline+=%#MyStatuslineModifiedBody#%{SetModifiedSymbol(&modified)}
 set statusline+=%#MyStatuslineModified#
-" Right side items
+" Right side items.
 " =======================
 set statusline+=%=
-" Line and Column
+" Line and Column.
 set statusline+=%#MyStatuslineLineCol#
 set statusline+=%#MyStatuslineLineColBody#%2l
 set statusline+=\/%#MyStatuslineLineColBody#%2c
@@ -136,7 +136,7 @@ set statusline+=%#MyStatuslineLineCol#
 " Padding
 set statusline+=\ 
 
-" Current scroll percentage and total lines of the file
+" Current scroll percentage and total lines of the file.
 set statusline+=%#MyStatuslinePercentage#
 set statusline+=%#MyStatuslinePercentageBody#%P
 set statusline+=\/\%#MyStatuslinePercentageBody#%L
