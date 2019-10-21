@@ -116,37 +116,37 @@ endfunction
 set statusline=%{RedrawModeColors(mode())}
 " Left side items.
 " =======================
-set statusline+=%#MyStatuslineAccent#
+set statusline+=%#MyStatuslineAccent#
 set statusline+=%#MyStatuslineAccentBody#\ %{SetModeSymbol(mode())}\ 
 " Filename.
-set statusline+=%#MyStatuslineFilename#\ %t\ 
-set statusline+=%#MyStatuslineSeparator#\ 
+set statusline+=%#MyStatuslineFilename#\ %t
+set statusline+=%#MyStatuslineSeparator#\ 
 " Modified status.
-set statusline+=%#MyStatuslineModified#
+set statusline+=%#MyStatuslineModified#
 set statusline+=%#MyStatuslineModifiedBody#%{SetModifiedSymbol(&modified)}
-set statusline+=%#MyStatuslineModified#
+set statusline+=%#MyStatuslineModified#
 " Right side items.
 " =======================
 set statusline+=%=
 " Line and Column.
-set statusline+=%#MyStatuslineLineCol#
+set statusline+=%#MyStatuslineLineCol#
 set statusline+=%#MyStatuslineLineColBody#%2l
 set statusline+=\/%#MyStatuslineLineColBody#%2c
-set statusline+=%#MyStatuslineLineCol#
+set statusline+=%#MyStatuslineLineCol#
 " Padding
 set statusline+=\ 
 
 " Current scroll percentage and total lines of the file.
-set statusline+=%#MyStatuslinePercentage#
+set statusline+=%#MyStatuslinePercentage#
 set statusline+=%#MyStatuslinePercentageBody#%P
 set statusline+=\/\%#MyStatuslinePercentageBody#%L
-set statusline+=%#MyStatuslinePercentage#
+set statusline+=%#MyStatuslinePercentage#
 " Padding
 set statusline+=\ 
 " Filetype
-set statusline+=%#MyStatuslineFiletype#
-set statusline+=%#MyStatuslineFiletypeBody#\ %{SetFiletype(&filetype)}\ 
-set statusline+=%#MyStatuslineFiletype#
+set statusline+=%#MyStatuslineFiletype#
+set statusline+=%#MyStatuslineFiletypeBody#%{SetFiletype(&filetype)}
+set statusline+=%#MyStatuslineFiletype#
 
 " Setup the colors
 exe 'hi StatusLine          guifg='.s:purple.'     guibg=NONE     gui=NONE'
